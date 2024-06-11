@@ -36,3 +36,4 @@ console.log({person2});
 const person3 = structuredClone(person);
 person3.adress.city = 'MS';
 console.log({person3});
+console.log({personFix});

@@ -1,6 +1,5 @@
 const numberArray = [1,2,3,4,5];
 numberArray.push(6);
-console.log({numberArray});
 //?Recordemos que si ponemos as const en la declacion sera inmutable ejemplo:
 const numberArray2 = [1,2,3,4,5] as const;
 //! numberArray2.push(6); La propiedad 'push' no existe en el tipo 'readonly [1, 2, 3, 4, 5]'.ts(2339)
@@ -19,4 +18,6 @@ const numberArray6 = numberArray.map( value =>{
     return value.toString()
 });
 console.log({numberArray6});
+console.log({numberArray},{numberArray5},{numberArray2});
+
 export {};

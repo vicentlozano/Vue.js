@@ -1,10 +1,23 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-//import './bases/01-const-let'
-//import './bases/02-object'
-//import './bases/03-arrays'
-//import './bases/04-functions'
+import './style.css';
+import typescriptLogo from './typescript.svg';
+import viteLogo from '/vite.svg';
+//import './bases/01-const-let';
+//import './bases/02-object';
+//import './bases/03-arrays';
+//import './bases/04-functions';
+//import './bases/05-deses-obj';
+//import './bases/06-deses-arr';
+//import './bases/07-imp-exp';
+//import './bases/08-promises';
+//import './bases/09-fetch-api';
+//import './bases/10-axios';
+import './bases/11-async-away';
+
+
+
+
+
+
 
 
 
