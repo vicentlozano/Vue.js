@@ -26,6 +26,6 @@ const squareCounter = computed(() => counter.value * counter.value);
 <!-- Si ponemos styled scooped el estilo solo afectara a este componente -->
  <style scoped>
  .btn{
-  @apply p-5 bg-blue-500 rounded hover:bg-blue-700 mr-2;
+  @apply p-5 bg-red-500 rounded hover:bg-blue-700 mr-2;
  }
 </style>
