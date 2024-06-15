@@ -9,7 +9,10 @@
   </section>
 </template>
 <script lang="ts" setup>
-import { computed, ref } from 'vue';
+
+import { useCounter } from '@/composables/useCounter';
+// import { computed, ref } from 'vue';
+
 // Modo de recibir props del padre en javascript
 // const props = defineProps({
 //   value: {type: Number, required: true}
@@ -18,10 +21,12 @@ import { computed, ref } from 'vue';
 interface Props {
   value: number;
 }
-// Si queremos que el value pueda ser opcional solo tenemos que poner value?:
 const props = defineProps<Props>();
-const counter = ref(props.value);
-const squareCounter = computed(() => counter.value * counter.value);
+const {counter,squareCounter} = useCounter(props.value);
+// Si queremos que el value pueda ser opcional solo tenemos que poner value?:
+
+// const counter = ref(props.value);
+// const squareCounter = computed(() => counter.value * counter.value);
 </script>
 <!-- Si ponemos styled scooped el estilo solo afectara a este componente -->
  <style scoped>
